@@ -1,2 +1,2 @@
 # Java_script
-Main
+Latihan 01
