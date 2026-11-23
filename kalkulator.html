@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Kalkulator Sederhana</title>
+</head>
+<body>
+
+    <h1>Kalkulator Sederhana</h1>
+
+    <script>
+        // Input angka pertama
+        let angka1 = prompt("Masukkan angka pertama:");
+
+        // Input angka kedua
+        let angka2 = prompt("Masukkan angka kedua:");
+
+        // Input operator
+        let operator = prompt("Masukkan operator (+, -, *, /):");
+
+        // Mengubah input menjadi angka
+        angka1 = Number(angka1);
+        angka2 = Number(angka2);
+
+        let hasil;
+
+        // Proses perhitungan
+        switch (operator) {
+            case "+":
+                hasil = angka1 + angka2;
+                break;
+
+            case "-":
+                hasil = angka1 - angka2;
+                break;
+
+            case "*":
+                hasil = angka1 * angka2;
+                break;
+
+            case "/":
+                if (angka2 === 0) {
+                    alert("Tidak bisa membagi dengan nol!");
+                } else {
+                    hasil = angka1 / angka2;
+                }
+                break;
+
+            default:
+                alert("Operator tidak valid!");
+        }
+
+        // Menampilkan hasil
+        if (hasil !== undefined) {
+            alert("Hasil perhitungan: " + hasil);
+        }
+    </script>
+
+</body>
+</html>
