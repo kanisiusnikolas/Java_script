@@ -1,0 +1,15 @@
+==================================================
+INFORMASI REPOSITORI PORTOFOLIO MEKATRONIKA
+==================================================
+Nama Mahasiswa : Kanisius Nikolas Candra
+NIM            : 20246039
+URL Repository : https://github.com/kanisiusnikolas/Portofolio
+Branch Dasar   : Web-Bootstrap
+Branch Tugas   : Web-JS
+
+Fitur yang ditambahkan pada Web-JS:
+1. Menu navigasi active mengikuti pilihan/section yang terlihat.
+2. Perpindahan antar-section menggunakan smooth autoscroll.
+3. Grafik data numerik statis pada section About menggunakan Chart.js.
+
+==================================================
