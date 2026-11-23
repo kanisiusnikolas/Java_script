@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second Stopwatch</title>
+</head>
+<body>
+
+    <h1>Second Stopwatch</h1>
+
+    <!-- Tampilan waktu -->
+    <h2 id="timer">0</h2>
+
+    <!-- Tombol kontrol -->
+    <button onclick="startStopwatch()">Start</button>
+    <button onclick="stopStopwatch()">Stop</button>
+    <button onclick="resetStopwatch()">Reset</button>
+
+    <script>
+        let seconds = 0;
+        let interval = null;
+
+        // Fungsi Start
+        function startStopwatch() {
+            if (interval === null) {
+                interval = setInterval(function() {
+                    seconds++;
+                    document.getElementById("timer").innerHTML = seconds;
+                }, 1000);
+            }
+        }
+
+        // Fungsi Stop
+        function stopStopwatch() {
+            clearInterval(interval);
+            interval = null;
+        }
+
+        // Fungsi Reset
+        function resetStopwatch() {
+            clearInterval(interval);
+            interval = null;
+            seconds = 0;
+            document.getElementById("timer").innerHTML = seconds;
+        }
+    </script>
+
+</body>
+</html>
